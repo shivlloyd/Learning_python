@@ -42,8 +42,6 @@ Indexing starts from 0 up to the length of the list minus 1.
 ['Black', 'green', 'Masala', 'Herbal']
 ```
 
-Here's your explanation corrected and formatted in markdown:
-
 We can assign a new element to a specific list index. However, if we want to change multiple items at a specific index range, we can do something like this:
 
 ```python
@@ -70,7 +68,9 @@ This sets the new items in the index range starting from 1 up to (3-1), resultin
 ```
 
 `tea_varieties[1:1]` shows an empty array because indexing starts from 1 and ends at (1-1), resulting in an empty range.
+
 `tea_varieties[1:1] = ['test', 'test']` inserts two new items at the starting index 1.
+
 `tea_varieties[1:3] = []` removes the two items from indexes 1 and 2 by specifying to insert 'nothing' in those indexes.
 
 ```python
@@ -176,8 +176,8 @@ range(0, 10)
 `range()` defines the number range from start to finish, `range(0,10)` ranges from 0 to (10-1).
 
 It's specially used in loop iterations, for example:
-squared_nums = [x**2 for x in range(10)]
+`squared_nums = [x**2 for x in range(10)]`
 
-This is called **List Comprehension**, where we use the for loop to generate a result and also store it in a list simultaneously.
+This is called **List Comprehension**, where we use the `for` loop to generate a result and also store it in a list simultaneously.
 
 So, here we are using `range(10)`, which by default starts with 0 until (10-1). On each iteration, it assigns the number value 0, 1, 2, 3, ... to `x`, and then performs the operation `x**2`, which calculates `x` to the power of 2. After that, it stores each result in the list one by one. Finally, after finishing the loop, the list is assigned to the `squared_nums` variable.
