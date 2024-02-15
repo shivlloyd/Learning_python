@@ -1,5 +1,7 @@
 ## Behind the scene of loops in python
 
+![Screenshot 2024-02-15 123725](https://github.com/shivlloyd/Learning_python/assets/41133545/ed7f3466-0960-47f3-b0e9-21cbb3a38d9e)
+
 Python uses its iteration tools for its behind-the-scenes loop operations. Iteration tools, such as "for" loops and comprehensions, are only applicable to objects that are iterable. Examples of iterable objects include lists, files, etc.
 
 When iteration tools query iterable objects for applying loops on them, they pass an `iter()` method. These iterable objects return the memory address location of the starting point of the iterable object along with a `__next__` response, dictating to the iteration tool that there is more sequence of memory references for continuous iteration on each item.
