@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from bson import ObjectId
 
 client = MongoClient(
-    "mongodb+srv://youtubepy:chankyisadog2@cluster0.hqvneut.mongodb.net/", tlsAllowInvalidCertificates=True
+    "mongodb+srv://youtubepy:*******@cluster0.hqvneut.mongodb.net/", tlsAllowInvalidCertificates=True
 )
 # Not a good idea to include id and password incode files
 # tlsAllowInvalidCertificates=True - Not a good way to handle ssl
